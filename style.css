@@ -61,42 +61,6 @@ margin-left: 3px;
     align-items: center;
 }
 
-/* Search-box */
-/* .nav-search{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #000;
-    height: 40px;
-    width: 620px;
-    border-radius: 4px;
-}
-.nav-search:hover{
-    border: 2px solid #42ba42;
-}
-.search-select{
-    background-color: #f3f3f3;
-    width: 50px;
-    text-align: center;
-    border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border: none;
-}
-.search-input{
-    width: 100%;
-    font-size: 1rem;
-    border: none;
-}
-.search-icon{
-    width: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background-color: #42ba42;
-    border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-      color: #1b4d1b;
-} */
 /* location box */
 .nav-loc{
     display: flex;
@@ -984,17 +948,7 @@ footer {
   border-radius: 8px;
   font-weight: bold;
 }
-@media (max-width: 992px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 576px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* Crops */
 .crops-section {
   padding: 60px 10%;
@@ -1056,22 +1010,136 @@ footer {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Responsive */
+
+/* Mobile Responsive */
+
+/* Navbar & Header */
 @media (max-width: 768px) {
-  .crop-row,
-  .crop-row.reverse {
-    flex-direction: column;
-    text-align: center;
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 12px;
+    justify-content: space-between;
   }
 
-  .crop-image img {
-    max-width: 100%;
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+  }
+
+  .nav-logo {
+    width: 110px;
   }
 }
 
-@media(max-width: 768px){
-    .intro-section{
-        flex-direction: column;
-        text-align: center;
-    }
+/* Hero & Intro Section */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 5%;
+  }
+
+  .intro-left h1 {
+    font-size: 24px;
+  }
+
+  .intro-right p {
+    font-size: 14px;
+  }
+}
+
+/* Products Section */
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 95%;
+  }
+}
+
+/* Features / Why Choose Us */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 95%;
+  }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .page-content {
+    padding: 40px 20px;
+  }
+}
+
+/* Products Grid (Other Pages) */
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Career & Cards */
+@media (max-width: 768px) {
+  .career-cards {
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+}
+
+/* Banner Text */
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 26px;
+  }
+}
+
+/* General Fix */
+img {
+  max-width: 100%;
+  height: auto;
 }
