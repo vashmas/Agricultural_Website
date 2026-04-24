@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agrinova Pakistan's expert crop protection insights — practical guides on wheat, cotton, maize & sugarcane pest management, weedicide use, and fertilizer tips for Pakistani farmers.">
+    <meta name="keywords" content="Pakistan farming tips, wheat crop protection, cotton pest control, bollworm control Pakistan, weedicide guide Pakistan, fungicide for wheat rust, sugarcane stem borer, maize farming Pakistan, Agrinova insights, agricultural advice Pakistan">
+    <meta name="author" content="Agrinova Group of Companies">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="News & Insights – Agrinova Pakistan Crop Protection">
+    <meta property="og:description" content="Expert crop protection guides for wheat, cotton, maize and sugarcane farmers across Pakistan.">
+    <meta property="og:type" content="website">
+    <title>News & Insights – Crop Protection & Farming Guides | Agrinova Pakistan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-logo border"><div class="logo"></div></div>
+    <div class="nav-address border">
+        <p class="add-first">Deliver to</p>
+        <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-sec">Pakistan</p>
+        </div>
+    </div>
+    <div class="nav-loc border">
+        <i class="fa-regular fa-compass"></i>
+        <p>17-A, Industrial Estate, Multan</p>
+    </div>
+    <div class="email border">
+        <i class="fa-solid fa-envelope"></i>
+        <p>agrinovapakistan99@yahoo.com</p>
+    </div>
+</div>
+<div class="pannel">
+    <div class="pannel-all">
+        <i class="fa-solid fa-bars menu-icon" id="menuBtn"></i>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <i class="fa-solid fa-xmark close-icon" id="closeBtn"></i>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="crops.html">Crops</a>
+        <a href="career.html">Career</a>
+        <a href="blogs.html">News &amp; Insights</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="pannel-ops">
+        <ul class="menu">
+            <li class="menu-item dropdown">
+                <a href="index.html">Home</a>
+                <ul class="submenu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="management.html">Management</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="products.html">Products</a></li>
+            <li class="menu-item"><a href="crops.html">Crops</a></li>
+            <li class="menu-item"><a href="Quality.html">Quality Control</a></li>
+            <li class="menu-item"><a href="Career.html">Career</a></li>
+            <li class="menu-item"><a href="blogs.html">News &amp; Insights</a></li>
+            <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<a href="https://wa.me/03008735599" target="_blank" class="whatsapp-btn">Chat with us</a>
+
+<!-- HERO -->
+<div class="blog-hero">
+    <div class="blog-hero-inner">
+        <div class="blog-hero-label">Agrinova Pakistan</div>
+        <h1>News &amp; <span>Insights</span></h1>
+        <p>Expert crop protection knowledge for Pakistan's wheat, cotton, maize and sugarcane farmers — from Agrinova's field specialists since 1999.</p>
+        <div class="blog-hero-chips">
+            <a class="hero-chip active" onclick="filterAll();return false;">All Topics</a>
+            <a class="hero-chip" onclick="filterCrop('wheat');return false;">🌾 Wheat</a>
+            <a class="hero-chip" onclick="filterCrop('cotton');return false;">🌿 Cotton</a>
+            <a class="hero-chip" onclick="filterCrop('maize');return false;">🌽 Maize</a>
+            <a class="hero-chip" onclick="filterCrop('sugar');return false;">🎋 Sugarcane</a>
+            <a class="hero-chip" onclick="filterCrop('general');return false;">📋 General</a>
+        </div>
+    </div>
+</div>
+
+<!-- STATS -->
+<div class="blog-stats">
+    <div class="blog-stats-inner">
+        <div class="bstat"><span class="bstat-num">25+</span><span class="bstat-label">Years Field Experience</span></div>
+        <div class="bstat"><span class="bstat-num">200+</span><span class="bstat-label">Crop Protection Products</span></div>
+        <div class="bstat"><span class="bstat-num">4</span><span class="bstat-label">Major Crops Covered</span></div>
+        <div class="bstat"><span class="bstat-num">All PK</span><span class="bstat-label">Nationwide Coverage</span></div>
+    </div>
+</div>
+
+<!-- FILTER TABS -->
+<div class="blog-filter">
+    <div class="blog-filter-inner">
+        <button class="btab active" data-filter="all">All Topics</button>
+        <button class="btab" data-filter="wheat">🌾 Wheat</button>
+        <button class="btab" data-filter="cotton">🌿 Cotton</button>
+        <button class="btab" data-filter="maize">🌽 Maize</button>
+        <button class="btab" data-filter="sugar">🎋 Sugarcane</button>
+        <button class="btab" data-filter="general">📋 General</button>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="blog-main">
+<div class="blog-content">
+
+    <!-- FEATURED -->
+    <div class="featured-wrap" id="featured-wrap" data-category="wheat">
+        <div class="section-label"><span>Featured Article</span></div>
+        <article class="featured-card" onclick="openModal('wheat-rust')" itemscope itemtype="https://schema.org/Article">
+
+            <!-- Left Visual Panel -->
+            <div class="featured-visual">
+                <!-- Wheat photo — place wheat1.png in your images/ folder -->
+                <img class="featured-visual-img" src="images/wheat1.png" alt="Wheat field Pakistan Yellow Rust Powdery Mildew">
+                <!-- Dark gradient overlay so text stays readable -->
+                <div class="featured-visual-overlay"></div>
+
+                <!-- Top eyebrow -->
+                <div class="fv-eyebrow">
+                    <div class="fv-eyebrow-dot"></div>
+                    <span class="fv-eyebrow-text">Featured Article</span>
+                </div>
+
+                <!-- Bottom labels -->
+                <div class="featured-visual-foot">
+                    <div class="fv-season">🌾 Wheat</div>
+                    <div class="fv-panel-title">Yellow Rust &amp; <span>Powdery<br>Mildew</span> Control</div>
+                </div>
+            </div>
+
+            <!-- Right Content Panel -->
+            <div class="featured-body">
+                <span class="art-tag tag-wheat">Fungal Disease Control</span>
+                <h2 itemprop="headline">How to Control Yellow Rust &amp; Powdery Mildew in Pakistani Wheat Fields</h2>
+                <p itemprop="description">Yellow rust is the most destructive fungal disease for wheat farmers across Punjab and Sindh. The right fungicide at the right growth stage can protect up to 70% of your yield.</p>
+                <div class="feat-insights">
+                    <span class="feat-insight-pill"><i class="fa-solid fa-check"></i> Spray Timing Guide</span>
+                    <span class="feat-insight-pill"><i class="fa-solid fa-check"></i> Fungicide Selection</span>
+                    <span class="feat-insight-pill"><i class="fa-solid fa-check"></i> Prevention Tips</span>
+                </div>
+                <button class="art-read-btn" onclick="openModal('wheat-rust');event.stopPropagation();">
+                    Read Full Guide <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="art-meta">
+                    <div class="art-author-dot">A</div>
+                    <div class="art-meta-text"><strong>Agrinova Crop Specialist</strong>Agrinova Pakistan</div>
+                    <span class="art-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- GRID -->
+    <div class="section-label"><span>Latest Articles</span></div>
+    <div class="blog-grid" id="blog-grid">
+
+        <!-- Cotton 1 -->
+        <article class="blog-card" data-category="cotton" itemscope itemtype="https://schema.org/Article" onclick="openModal('bollworm')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/cotton1.png" alt="Cotton bollworm spray schedule insecticide Pakistan">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-cotton">Cotton</span>
+                <h3 itemprop="headline">Bollworm Control in Cotton: Full Spray Schedule &amp; Insecticide Rotation Guide</h3>
+                <p itemprop="description">Pink and American bollworm remain the top threat to Pakistani cotton. Complete spray calendar, correct dosages, and how to rotate insecticide classes for Kharif season.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('bollworm');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 6 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Maize 1 -->
+        <article class="blog-card" data-category="maize" itemscope itemtype="https://schema.org/Article" onclick="openModal('maize-herb')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/corn1.jpg" alt="Maize herbicide pre post emergence weed control Pakistan">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-maize">Maize</span>
+                <h3 itemprop="headline">Pre &amp; Post-Emergence Herbicides for Maize in Pakistan: A Practical Guide</h3>
+                <p itemprop="description">Weed competition in the first 30 days after sowing can cut maize yield by up to 50%. Learn to pick the right herbicide at each growth stage for Punjab and KPK.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('maize-herb');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sugarcane -->
+        <article class="blog-card" data-category="sugar" itemscope itemtype="https://schema.org/Article" onclick="openModal('sugarcane-borer')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/sugarcane1.jpg" alt="Sugarcane stem borer granular insecticide Punjab Sindh Pakistan">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-sugar">Sugarcane</span>
+                <h3 itemprop="headline">Stem Borer Management in Sugarcane: Granule Application Timing &amp; Dosage</h3>
+                <p itemprop="description">Stem borer can cause 20–40% yield loss if left unmanaged. Correct timing and application method for granular insecticides at planting and ratoon stages.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('sugarcane-borer');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Cotton 2 -->
+        <article class="blog-card" data-category="cotton" itemscope itemtype="https://schema.org/Article" onclick="openModal('whitefly')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/cotton2.png" alt="Whitefly cotton early detection monitoring insecticide Pakistan">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-cotton">Cotton</span>
+                <h3 itemprop="headline">Whitefly in Cotton: Early Detection, Monitoring &amp; Best Control Products</h3>
+                <p itemprop="description">Whitefly is Pakistan cotton's most persistent sucking pest. Learn to set up sticky traps, spot damage early, and choose the right insecticide including Imidacloprid.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('whitefly');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Wheat 2 -->
+        <article class="blog-card" data-category="wheat" itemscope itemtype="https://schema.org/Article" onclick="openModal('wheat-weeds')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/wheat2.png" alt="Wheat weed control weedicide Rabi season Pakistan">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-wheat">Wheat</span>
+                <h3 itemprop="headline">Top 5 Weeds That Cut Wheat Yield in Pakistan — and How to Control Them</h3>
+                <p itemprop="description">Grassy weeds like wild oats and broadleaf weeds like bathua are major yield thieves. Discover the best weedicide timings for Pakistani wheat fields this Rabi season.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('wheat-weeds');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- General -->
+        <article class="blog-card" data-category="general" itemscope itemtype="https://schema.org/Article" onclick="openModal('resistance')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/general_crop.jpg" alt="Insecticide resistance Pakistan crop protection rotation guide">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-general">General</span>
+                <h3 itemprop="headline">Insecticide Resistance in Pakistan: Why Rotating Chemicals Protects Your Crop</h3>
+                <p itemprop="description">Overuse of the same insecticide class causes resistance — a growing challenge for Pakistani cotton and rice farmers. Design a proper rotation program for long-term effectiveness.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('resistance');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 7 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Maize 2 -->
+        <article class="blog-card" data-category="maize" itemscope itemtype="https://schema.org/Article" onclick="openModal('armyworm')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/corn2.jpg" alt="Fall armyworm maize KPK Punjab Pakistan insecticide control">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-maize">Maize</span>
+                <h3 itemprop="headline">Fall Armyworm in Maize: Identification, Damage Signs &amp; Control in Pakistan</h3>
+                <p itemprop="description">Fall armyworm has become a serious threat to maize in KPK and Punjab. Identify egg masses and young larvae early — discover which insecticides give the best results.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('armyworm');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Wheat 3 -->
+        <article class="blog-card" data-category="wheat" itemscope itemtype="https://schema.org/Article" onclick="openModal('wheat-fert')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/wheat3.png" alt="Wheat fertilizer nutrient management Pakistan yield improvement">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-wheat">Wheat</span>
+                <h3 itemprop="headline">Wheat Fertilizer Guide: Right Nutrients at the Right Stage for Maximum Yield</h3>
+                <p itemprop="description">Proper fertilizer management can increase wheat yield by 20–30%. Learn the correct NPK application timings for Pakistani wheat growing conditions in Punjab and Sindh.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('wheat-fert');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Cotton 3  -->
+        <article class="blog-card" data-category="cotton" itemscope itemtype="https://schema.org/Article" onclick="openModal('sucking-pest')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/cotton3.png" alt="Cotton aphid jassid thrips sucking pest control Pakistan">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-cotton">Cotton</span>
+                <h3 itemprop="headline">Aphids, Jassids &amp; Thrips in Cotton: Complete Sucking Pest Management Guide</h3>
+                <p itemprop="description">Sucking pests are the biggest early-season threat to cotton in Pakistan. Identify infestation levels and choose the right systemic insecticide for effective control.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('sucking-pest');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 6 min</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Cotton 4  -->
+        <article class="blog-card" data-category="cotton" itemscope itemtype="https://schema.org/Article" onclick="openModal('cotton-stages')" style="cursor:pointer;">
+            <div class="blog-card-img">
+                <img src="images/cotton5.png" alt="Cotton crop growth stages protection guide Pakistan Agrinova">
+                <div class="blog-card-img-overlay"></div>
+            </div>
+            <div class="blog-card-body">
+                <span class="art-tag tag-cotton">Cotton</span>
+                <h3 itemprop="headline">Cotton Crop Growth Stages: A Complete Protection Guide for Pakistani Farmers</h3>
+                <p itemprop="description">From germination to boll formation — learn which pests and diseases attack at each cotton growth stage and the right crop protection products to use at every step.</p>
+                <div class="blog-card-foot">
+                    <button class="art-read-link" onclick="openModal('cotton-stages');event.stopPropagation();">Read Article <i class="fa-solid fa-arrow-right"></i></button>
+                    <span class="art-time-sm"><i class="fa-regular fa-clock"></i> 7 min</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+<!-- SIDEBAR -->
+<aside class="blog-sidebar">
+    <div class="sb-block">
+        <h4>🌿 Seasonal Tips</h4>
+        <ul class="sb-tips">
+            <li class="sb-tip"><span class="sb-tip-icon">🌾</span><div><strong>Wheat — Spray Timing</strong>Apply fungicide at flag leaf stage. Don't wait for visible rust infection.</div></li>
+            <li class="sb-tip"><span class="sb-tip-icon">🌿</span><div><strong>Cotton — Whitefly Watch</strong>Monitor leaf undersides from June. Early action prevents resistance.</div></li>
+            <li class="sb-tip"><span class="sb-tip-icon">🌽</span><div><strong>Maize — Weed Control</strong>Apply pre-emergence herbicide within 3 days of sowing for best results.</div></li>
+            <li class="sb-tip"><span class="sb-tip-icon">🎋</span><div><strong>Sugarcane — Stem Borer</strong>Use granular insecticide at planting for early root zone protection.</div></li>
+        </ul>
+    </div>
+    <div class="sb-block">
+        <h4>Browse by Crop</h4>
+        <div class="sb-pills">
+            <button class="sb-pill pill-wheat"  onclick="filterCrop('wheat')">🌾 Wheat</button>
+            <button class="sb-pill pill-cotton" onclick="filterCrop('cotton')">🌿 Cotton</button>
+            <button class="sb-pill pill-maize"  onclick="filterCrop('maize')">🌽 Maize</button>
+            <button class="sb-pill pill-sugar"  onclick="filterCrop('sugar')">🎋 Sugarcane</button>
+            <button class="sb-pill pill-gen"    onclick="filterCrop('general')">📋 General</button>
+        </div>
+    </div>
+    <div class="sb-cta">
+        <h4>Need Expert Advice?</h4>
+        <p>Our crop specialists are ready to help you choose the right products for your fields across Pakistan.</p>
+        <a href="products.html" class="sb-cta-btn"><i class="fa-solid fa-seedling"></i> View Products</a>
+        <a href="https://wa.me/03008735599" target="_blank" class="sb-wa-btn"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+</aside>
+
+</div>
+
+<!-- FOOTER -->
+<div class="foot-pannel1"><span id="backToTop">Back to Top</span></div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="quality.html">Quality Control</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Other Pages</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+                <li><span class="icon">✉</span><span>agrinovapakistan99@yahoo.com</span></li>
+                <li><span class="icon">📞</span><span>0300 8735599</span></li>
+                <li><span class="icon">📍</span><span>17-A, Industrial Estate, Multan</span></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Consultant</h3>
+            <p>For further information, contact at:</p><br>
+            <ul class="contact-list">
+                <li><span class="icon">📞</span><span>0306 8035365</span></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<footer><p>© 2026 Agrinova Enterprises | Phone: 0300-8735599</p></footer>
+
+<!-- ===================================================
+     ARTICLE MODALS
+=================================================== -->
+<div class="art-modal-overlay" id="artModalOverlay" onclick="closeModal(event)">
+  <div class="art-modal" id="artModal">
+    <div class="art-modal-banner" id="modalBanner">
+      <div class="art-modal-banner-bg" id="modalBannerBg"></div>
+      <button class="art-modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+      <span class="art-modal-tag" id="modalTag"></span>
+    </div>
+    <div class="art-modal-body">
+      <h2 id="modalTitle"></h2>
+      <div class="art-modal-meta">
+        <div class="art-author-dot">A</div>
+        <div class="art-modal-meta-text">
+          <strong>Agrinova Crop Specialist</strong>Agrinova Pakistan
+        </div>
+        <span class="art-time" id="modalTime"><i class="fa-regular fa-clock"></i></span>
+      </div>
+      <div class="art-modal-content" id="modalContent"></div>
+      <div class="art-modal-cta">
+        <p>Need the right product for your crop?</p>
+        <a href="products.html"><i class="fa-solid fa-seedling"></i> Browse Products</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
