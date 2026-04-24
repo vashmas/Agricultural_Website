@@ -1,145 +1,194 @@
- Agricultural Website - Agrinova Group of Companies 
- 
-📌 Project Overview
+# 🌿 Agricultural Website - Agrinova Group of Companies
+
+> Pakistan's leading agricultural crop protection company since 1999. This repository contains the complete source code for the Agrinova Group of Companies official website.
+
+---
+
+## 🏢 About the Project
+
+This is a multi-page static website built for **Agrinova Group of Companies**, one of Pakistan's most trusted agricultural solutions providers. The website showcases Agrinova's 200+ crop protection products, company information, career opportunities, and expert farming insights for farmers across Pakistan.
+
+**Live Purpose:** Corporate website for dealer inquiries, farmer guidance, career applications, and brand presence across Pakistan.
+
+---
+
+## 🌐 Website Pages
+
+| Page | File | Description |
+|------|------|-------------|
+| Home | `index.html` | Landing page with hero, stats, products, blogs |
+| About | `about.html` | Company history, mission, why choose us |
+| Products | `products.html` | 200+ products with category filter |
+| Crops | `crops.html` | Wheat, Cotton, Maize, Sugarcane solutions |
+| Quality Control | `Quality.html` | Lab testing process and quality standards |
+| Management | `management.html` | CEO and leadership team profiles |
+| Career | `Career.html` | Job openings and company culture |
+| Blogs | `blogs.html` | Crop protection articles and farming guides |
+| Contact Us | `contact.html` | Contact form, office details, business hours |
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| HTML5 | Page structure and semantic markup |
+| CSS3 | Styling, animations, responsive layout |
+| JavaScript | Filter logic, counters, sidebar, modals |
+| Font Awesome 7 | Icons throughout the website |
+| Google Fonts | Poppins, Playfair Display typography |
+
+> No frameworks or build tools required. Pure HTML, CSS, and vanilla JavaScript.
+
+---
+
+## 📁 Project Structure
+
+```
+agrinova-website/
+│
+├── index.html              # Home page
+├── about.html              # About page
+├── products.html           # Products page
+├── crops.html              # Crops page
+├── Quality.html            # Quality Control page
+├── management.html         # Management team page
+├── Career.html             # Career page
+├── blogs.html              # News & Insights page
+├── contact.html            # Contact page
+│
+├── style.css               # Main stylesheet (all pages)
+├── script.js               # Main JavaScript file
+│
+└── images/                 # All website images
+    ├── ag-logo.jpeg        # Navbar logo
+    ├── ag-logo2.jpeg       # Intro section logo
+    ├── ag-banner.jpeg      # Home banner
+    ├── hero-img.png        # Hero background
+    ├── home-about.jpg      # About section image
+    ├── about-logo.png      # About page banner
+    ├── lab.png             # Quality control lab
+    ├── CEO.png             # CEO photo
+    ├── manager.png         # Director Manager photo
+    ├── manager2.jpeg       # Director Finance photo
+    ├── wheat1.jpeg         # Wheat blog image
+    ├── wheat2.jpeg         # Wheat blog image
+    ├── wheat3.jpeg         # Wheat blog image
+    ├── cotton1.jpeg          # Cotton blog image
+    ├── cotton2.jpeg          # Cotton blog image
+    ├── cotton3.jpeg          # Cotton blog image
+    ├── cotton4.jpeg          # Cotton blog image
+    ├── maize1.jpeg         # Maize blog image
+    ├── maize2.jpeg         # Maize blog image
+    ├── sugarcane1.jpeg     # Sugarcane blog image
+    ├── generalcrops.jpeg   # General farming image
+    ├── wheat.png           # Crops page wheat
+    ├── cotton.png          # Crops page cotton
+    ├── maize.png           # Crops page maize
+    ├── sugarcane.png       # Crops page sugarcane
+    └── [product images]    # Individual product images
+```
+
+---
+
+## ✨ Key Features
+
+- **Fully Responsive** — Works on all screen sizes: desktop, tablet, and mobile
+- **Sticky Navbar + Panel** — Navigation stays visible while scrolling
+- **Product Filter** — Filter 200+ products by category (Insecticide, Fungicide, Weedicide, Fertilizer, Granules)
+- **Product Modal** — Click any product to view full details in a popup
+- **Animated Counters** — Stats section counts up on scroll
+- **Blog Filter** — Filter articles by crop type (Wheat, Cotton, Maize, Sugarcane)
+- **WhatsApp Integration** — Direct chat button on every page
+- **Mobile Sidebar** — Hamburger menu for mobile navigation
+- **SEO Optimized** — Meta tags, structured data, semantic HTML on all pages
+- **Contact Form** — Form with success message feedback
+- **Back to Top** — Quick scroll button in footer
 
-Agrinova Group of Companies is a modern, multi-page agricultural website developed to showcase agricultural products, crops, company information, and career opportunities in a professional and user-friendly way.
+---
 
-The website is designed with a clean UI, responsive layout, and interactive features such as sidebar navigation, dynamic buttons, and integrated contact options.
-Instead of using a separate Contact Us page, contact information is smartly integrated into the navbar and footer, making it easily accessible from any page.
+## 🔍 SEO Features
 
-🚀 Key Features
+- Unique `<title>` and `<meta description>` on every page
+- `lang="en-PK"` for Pakistan local SEO
+- Meta keywords, author, robots tags
+- Open Graph (og:) tags for social sharing
+- Schema.org Article markup on blog posts
+- Descriptive `alt` text on all images
+- Semantic HTML5 tags (`<header>`, `<section>`, `<article>`, `<aside>`, `<footer>`)
+- Internal linking between all pages
+- Keyword-rich content — Pakistan, crop names, product types naturally mentioned
 
-🏠 Home Page
+---
 
-> Attractive company introduction and tagline
+## 📱 Responsive Breakpoints
 
-> Modern and responsive layout
+| Breakpoint | Target Devices |
+|-----------|----------------|
+| `> 1024px` | Desktop and large laptops |
+| `≤ 1024px` | Small laptops and tablets |
+| `≤ 768px` | Mobile landscape and small tablets |
+| `≤ 480px` | Mobile portrait |
 
-> Smooth navigation across all sections
+---
 
-📑 Sidebar Navigation
 
-> Menu icon to open and close the sidebar
+## 🏭 Company Information
 
-> Sidebar contains quick links to all major pages
+| Detail | Info |
+|--------|------|
+| Company | Agrinova Group of Companies |
+| Established | 1999 |
+| Location | 17-A, Industrial Estate, Multan, Pakistan |
+| Phone | 0300 8735599 |
+| Consultant | 0306 8035365 |
+| Email | agrinovapakistan99@yahoo.com |
+| Coverage | All provinces of Pakistan |
+| Products | 200+ registered agricultural products |
 
-> Improves navigation and user experience, especially on smaller screens
+---
 
-ℹ️ About Us
+## 📦 Product Categories
 
-> Company vision, mission, and background
+- **Insecticides** — Bollworm, whitefly, aphid, jassid control
+- **Fungicides** — Rust, powdery mildew, blight control
+- **Weedicides** — Grassy and broadleaf weed management
+- **Fertilizers** — Soil nutrition and crop yield improvement
+- **Granules** — Soil-applied pest and disease control
 
-> Overview of Agrinova’s goals and values
+---
 
-👩‍💼 Management Section
+## 🌾 Crops Covered
 
-> Professional presentation of the management team
+- **Wheat** — Rabi season crop protection
+- **Cotton** — Pakistan's primary cash crop solutions
+- **Maize** — Kharif season pest and weed management
+- **Sugarcane** — Industrial crop protection and nutrition
 
-> Organized layout for leadership information
+---
 
-🌱 Crops Section
+## 👥 Management Team
 
-> Detailed information about agricultural crops
+| Name | Role |
+|------|------|
+| Muhammad Shafiq Shahid | Chief Executive Officer |
+| Muhammad Saad Shafiq | Director Manager |
+| Muhammad Behzad Shafiq | Director Finance |
 
-> Clean and structured content
+---
 
-🧪 Products Section
+## 🔧 Customization Notes
 
-Product categories:
+- All styles are in `style.css` — single stylesheet for all pages
+- Product cards use `data-category` attribute for JavaScript filtering
+- Blog articles use `data-category` attribute for crop filtering
+- WhatsApp number can be updated in the `href="https://wa.me/03008735599"` links
+- Counter values can be updated in `data-target` attributes in `index.html`
 
-> Seeds
+---
 
-> Fertilizers
+## 📄 License
 
-> Pesticides
+This project is proprietary and belongs to **Agrinova Group of Companies**. All rights reserved.
 
-“Show More” button:
-
-> Redirects users to related product pages
-
-> Enhances navigation and usability
-
-✅ Quality Control
-
-> Explanation of quality standards and assurance processes
-
-> Emphasis on product reliability and excellence
-
-💼 Career Section
-
-> Career opportunities and job-related information
-
-“Apply Now” button:
-
-> Displays contact information when clicked
-
-> Creates an interactive application flow
-
-📩 Contact Information:
-
-Contact details are integrated into:
-
-> Navbar
-
-> Footer
-
-Users can easily access contact information without navigating to a separate page
-
-💬 WhatsApp Chat Button
-
-> Floating WhatsApp “Chat Us” button
-
-> Allows users to directly contact the company via WhatsApp
-
-> Improves communication and user engagement
-
-🛠️ Technologies Used
-
-> HTML5 – Website structure
-
-> CSS3 – Styling and layout design
-
-> JavaScript – Interactive and dynamic features
-
-> Bootstrap – Responsive and modern UI components
-
-🎯 Project Objectives
-
-> Build a professional agricultural website
-
-> Practice real-world front-end development skills
-
-> Implement interactive features such as sidebar navigation, buttons, and page redirection
-
-
-🌟 Highlights
-
-> Clean and modern UI design
-
-> Multi-page website structure
-
-> Responsive design for different devices
-
-> Sidebar-based navigation system
-
-> Interactive buttons and integrated contact features
-
-
-📌 Future Improvements
-
-> Add product filtering and search functionality
-
-> Create a dynamic contact form
-
-> Enhance animations and UI effects
-
-> Add backend integration in the future
-
-👩‍💻 Developer
-
-Vashma Shafiq
-
-Aspiring Front-End Developer with hands-on experience in building responsive and interactive websites using HTML, CSS, JavaScript, and Bootstrap. Currently learning React.js to enhance modern web development skills.
-
-
-❤️ If you like this project, don’t forget to star ⭐ the repository!
+© 2026 Agrinova Enterprises | Multan, Pakistan
